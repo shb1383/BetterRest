@@ -39,7 +39,7 @@ struct ContentView: View {
                 }
                 
                 Section("Daily coffee intake") {
-                    Picker("Cup(s) of coffee", selection: $coffeeAmount) {
+                    Picker("Number of cups", selection: $coffeeAmount) {
                         ForEach(coffeeAmounts, id: \.self) {
                             Text($0, format: .number)
                         }
